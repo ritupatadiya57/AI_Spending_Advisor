@@ -12,6 +12,14 @@ from database import create_finance_table, save_finance, get_finance
 from database import delete_expense, update_expense
 connect()
 
+st.markdown("""
+    <style>
+        [data-testid="stSidebar"] {
+            background-color: #00b2ec;  /* Sky Blue */
+        }
+    </style>
+""", unsafe_allow_html=True)
+
 st.title("💰 AI Smart Spending Advisor")
 
 menu = st.sidebar.selectbox(
@@ -53,7 +61,7 @@ with st.sidebar:
 
     st.markdown("""
     <div style="background-color:#ffffff; color:black; padding:10px; border-radius:10px; margin-bottom:10px;">
-    Mr. Praful Vinayak Bhoyar
+    pro. Praful Vinayak Bhoyar
     </div>
 
     <div style="background-color:#ffffff; color:black; padding:10px; border-radius:10px;">
@@ -75,7 +83,7 @@ from admin_module import total_transactions
 # ---------------- ADMIN MODULE ----------------
 ADMINS = {
     "ritu": "1234",
-    "hony": "1111",
+    "honey": "1111",
     "suhani": "2222",
     "yashvi": "3333"
 }
